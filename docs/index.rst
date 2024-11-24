@@ -15,7 +15,7 @@ aberrations for light-sheet fluorescence microscopy: (1) :mod:`Leonardo-DeStripe
 (2) :mod:`Leonardo-FUSE` reconstructs one single high-quality image from dual-sided illumination and/or dual-sided detection while 
 eliminating optical distortions (ghosts) caused by light refraction.
 
-.. image:: _static/img/outline.jpg
+.. image:: outline.jpg
     :alt: leonardo title figure
     :width: 900px
     :align: center
