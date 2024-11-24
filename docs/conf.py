@@ -58,3 +58,10 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 html_theme = "sphinx_rtd_theme"
 html_theme_options = {"navigation_depth": 4}
 html_show_sphinx = False
+html_context = {
+    "display_github": True,  # Integrate GitHub
+    "github_user": "MyUserName",  # Username
+    "github_repo": "MyDoc",  # Repo name
+    "github_version": "master",  # Version
+    "conf_py_path": "/source/",  # Path in the checkout to the docs root
+}
