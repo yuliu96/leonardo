@@ -11,3 +11,5 @@ and :mod:`Leonardo-FUSE`.
 
 Advanced Tutorials
 ------------------
+This section contains tutorials showcasing how to build an optimal workflow to resolve sample-induced 
+aberrations using :mod:`Leonardo-DeStripe`.
