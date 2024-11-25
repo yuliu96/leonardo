@@ -12,9 +12,9 @@ and :mod:`Leonardo-FUSE`.
 .. toctree::
     :maxdepth: 1
 
-    tutorials/tutorial_stripe_removal
-    tutorials/tutorial_fusion_along_illumination
-    tutorials/tutorial_fusion_along_detection
+    tutorial_stripe_removal
+    tutorial_fusion_along_illumination
+    tutorial_fusion_along_detection
 
 Advanced Tutorials
 ------------------
