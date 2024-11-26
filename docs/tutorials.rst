@@ -13,6 +13,7 @@ and :mod:`Leonardo-FUSE`.
     :maxdepth: 1
 
     tutorials/notebook/Leonardo_FUSE_along_illumination
+    tutorials/notebook/Leonardo_FUSE_along_detection
 
 Advanced Tutorials
 --------------------
