@@ -80,7 +80,7 @@ Use the provided options and settings in the plugin interface to configure your 
 
 .. image:: images/gui.png
    :alt: Image showing the gui functionality
-   :width: 500px
+   :width: 800px
    :align: center
 
 
