@@ -56,7 +56,7 @@ Alternatively, you can install the latest development version directly from the 
 Getting Started
 ============
 
-Opening the Plugin by navigating to you napari installation
+Opening the Plugin by navigating to your napari installation
 
 Launch napari in the terminal:
 
@@ -77,6 +77,11 @@ Load your image or data into napari. You can drag and drop files or use the "Fil
 Open the plugin as described above.
 
 Use the provided options and settings in the plugin interface to configure your analysis or processing task. See documented image of the GUI. 
+
+.. image:: images/gui.png
+   :alt: Image showing the gui functionality
+   :width: 500px
+   :align: center
 
 
 
