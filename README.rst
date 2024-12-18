@@ -1,87 +1,88 @@
-Example: Basic Sphinx project for Read the Docs
-===============================================
+Introduction
+============
 
-.. image:: https://readthedocs.org/projects/example-sphinx-basic/badge/?version=latest
-    :target: https://example-sphinx-basic.readthedocs.io/en/latest/?badge=latest
-    :alt: Documentation Status
+**Leonardo** is a comprehensive toolbox addressing major sample-induced aberrations in light sheet microscopy. It provides multi-view fusion of opposing illumination and detection sides by leveraging local image quality, specimen geometry, and prior knowledge of sample orientation. 
 
-.. This README.rst should work on Github and is also included in the Sphinx documentation project in docs/ - therefore, README.rst uses absolute links for most things so it renders properly on GitHub
+Leonardo consists of two modules:
 
-This example shows a basic Sphinx project with Read the Docs. You're encouraged to view it to get inspiration and copy & paste from the files in the source code. If you are using Read the Docs for the first time, have a look at the official `Read the Docs Tutorial <https://docs.readthedocs.io/en/stable/tutorial/index.html>`__.
+- **DeStripe**: Removes the stripe artifacts in SPIM caused by light absorption.
+- **FUSE**: Reconstructs one single high-quality image from dual-sided illumination and/or dual-sided detection while eliminating optical distortions (ghosts) caused by light refraction.
 
-📚 `docs/ <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/>`_
-    A basic Sphinx project lives in ``docs/``. All the ``*.rst`` make up sections in the documentation.
-⚙️ `.readthedocs.yaml <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/.readthedocs.yaml>`_
-    Read the Docs Build configuration is stored in ``.readthedocs.yaml``.
-⚙️ `docs/conf.py <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/conf.py>`_
-    Both the configuration and the folder layout follow Sphinx default conventions. You can change the `Sphinx configuration values <https://www.sphinx-doc.org/en/master/usage/configuration.html>`_ in this file
-📍 `docs/requirements.txt <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.txt>`_ and `docs/requirements.in <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/requirements.in>`_
-    Python dependencies are `pinned <https://docs.readthedocs.io/en/latest/guides/reproducible-builds.html>`_ (uses `pip-tools <https://pip-tools.readthedocs.io/en/latest/>`_). Make sure to add your Python dependencies to ``requirements.txt`` or if you choose `pip-tools <https://pip-tools.readthedocs.io/en/latest/>`_, edit ``docs/requirements.in`` and remember to run ``pip-compile docs/requirements.in``.
-💡 `docs/api.rst <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/api.rst>`_
-    By adding our example Python module ``lumache`` in the reStructuredText directive ``:autosummary:``, Sphinx will automatically scan this module and generate API docs.
-💡 `docs/usage.rst <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/docs/usage.rst>`_
-    Sphinx can automatically extract API documentation directly from Python modules, using for instance the ``:autofunction:`` directive.
-💡 `lumache.py <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/lumache.py>`_
-    API docs are generated for this example Python module - they use *docstrings* directly in the documentation, notice how this shows up in the rendered documentation.
-🔢 Git tags versioning
-    We use a basic versioning mechanism by adding a git tag for every release of the example project. All releases and their version numbers are visible on `example-sphinx-basic.readthedocs.io <https://example-sphinx-basic.readthedocs.io/en/latest/>`__.
-📜 `README.rst <https://github.com/readthedocs-examples/example-sphinx-basic/blob/main/README.rst>`_
-    Contents of this ``README.rst`` are visible on Github and included on `the documentation index page <https://example-sphinx-basic.readthedocs.io/en/latest/>`_ (Don't Repeat Yourself).
-⁉️ Questions / comments
-    If you have questions related to this example, feel free to can ask them as a Github issue `here <https://github.com/readthedocs-examples/example-sphinx-basic/issues>`_.
+Installation
+============
 
+You can install **napari-plugin-name** via pip:
 
-Example Project usage
----------------------
+.. code-block:: bash
 
-This project has a standard Sphinx layout which is built by Read the Docs almost the same way that you would build it locally (on your own laptop!).
+    pip install napari-plugin-name
 
-You can build and view this documentation project locally - we recommend that you activate `a local Python virtual environment first <https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment>`_:
+Alternatively, you can install the latest development version directly from the source:
 
-.. code-block:: console
+1. Install Anaconda (or Miniforge or Mambaforge) if you don't have one.
+2. Install Git if you don't have it yet.
+3. Create a virtual environment with Python <= 3.10 and numpy < 2.0. For example, create an environment called *Leonardo*:
 
-    # Install required Python dependencies (Sphinx etc.)
-    pip install -r docs/requirements.txt
+   .. code-block:: bash
 
-    # Enter the Sphinx project
-    cd docs/
-    
-    # Run the raw sphinx-build command
-    sphinx-build -M html . _build/
+      conda create -n Leonardo python=3.10 numpy=1.26.4
 
+4. Activate the environment:
 
-You can also build the documentation locally with ``make``:
+   .. code-block:: bash
 
-.. code-block:: console
+      conda activate Leonardo
 
-    # Enter the Sphinx project
-    cd docs/
-    
-    # Build with make
-    make html
-    
-    # Open with your preferred browser, pointing it to the documentation index page
-    firefox _build/html/index.html
+5. Install FUSE:
+
+   .. code-block:: bash
+
+      pip install git+https://github.com/peng-lab/LSFM-fusion.git
+      pip install git+https://github.com/peng-lab/LSFM-fusion.git@8-segmentation-fault-on-mac (for mac M1)
+
+6. Install **napari**:
+
+   .. code-block:: bash
+
+      python -m pip install "napari[all]"
+
+7. Install the **napari FUSE plugin**:
+
+   .. code-block:: bash
+
+      pip install git+https://github.com/peng-lab/LSFM-fusion-napari.git
 
 
-Using the example in your own project
--------------------------------------
+Getting Started
+============
 
-If you are new to Read the Docs, you may want to refer to the `Read the Docs User documentation <https://docs.readthedocs.io/>`_.
+Opening the Plugin by navigating to your napari installation
 
-If you are copying this code in order to get started with your documentation, you need to:
+Launch napari in the terminal:
 
-#. place your ``docs/`` folder alongside your Python project. If you are starting a new project, you can adapt the `pyproject.toml` example configuration.
-#. use your existing project repository or create a new repository on Github, GitLab, Bitbucket or another host supported by Read the Docs
-#. copy ``.readthedocs.yaml`` and the ``docs/`` folder into your project.
-#. customize all the files, replacing example contents.
-#. add your own Python project, replacing the ``pyproject.toml`` configuration and ``lumache.py`` module.
-#. rebuild the documenation locally to see that it works.
-#. *finally*, register your project on Read the Docs, see `Importing Your Documentation <https://docs.readthedocs.io/en/stable/intro/import-guide.html>`_.
+.. code-block:: bash
+
+  napari
 
 
-Read the Docs tutorial
-----------------------
+Go to the menu bar and select Plugins > napari-plugin-name.
 
-To get started with Read the Docs, you may also refer to the `Read the Docs tutorial <https://docs.readthedocs.io/en/stable/tutorial/>`__.
-It provides a full walk-through of building an example project similar to the one in this repository.
+The plugin interface will appear as a dockable widget within napari.
+
+Running the Plugin
+---------------
+
+Load your image or data into napari. You can drag and drop files or use the "File" menu.
+
+Open the plugin as described above.
+
+Use the provided options and settings in the plugin interface to configure your analysis or processing task. See documented image of the GUI. 
+
+.. image:: images/gui.png
+   :alt: Image showing the gui functionality
+   :width: 800px
+   :align: center
+
+
+
+
