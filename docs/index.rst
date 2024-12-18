@@ -19,14 +19,14 @@ eliminating optical distortions (ghosts) caused by light refraction.
     :alt: leonardo title figure
     :width: 900px
     :align: center
-    :target: https://github.com/peng-lab/LSFM-fusion
+    :target: https://github.com/peng-lab/leonardo_toolset
 
 
 |
 Manuscript
 ----------
 
-Please the `manuscript <https://www.nature.com/articles/ncomms14836>`_ to learn more.
+.. Please the `manuscript <https://www.nature.com/articles/ncomms14836>`_ to learn more.
 
 .. toctree::
    :caption: General
