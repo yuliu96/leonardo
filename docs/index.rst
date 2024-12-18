@@ -26,7 +26,7 @@ eliminating optical distortions (ghosts) caused by light refraction.
 Manuscript
 ----------
 
-.. Please the `manuscript <https://www.nature.com/articles/ncomms14836>`_ to learn more.
+Coming soon
 
 .. toctree::
    :caption: General
