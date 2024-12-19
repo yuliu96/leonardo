@@ -19,4 +19,9 @@ and :mod:`Leonardo-FUSE`.
 Advanced Tutorials
 --------------------
 This section contains tutorials showcasing how to build an optimal workflow to resolve sample-induced 
-aberrations using :mod:`Leonardo-DeStripe`.
+aberrations using :mod:`Leonardo-DeStripe-FUSE`.
+
+.. toctree::
+    :maxdepth: 1
+
+    tutorials/notebook/Leonardo_FUSE_DeStripe
