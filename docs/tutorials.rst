@@ -12,6 +12,7 @@ and :mod:`Leonardo-FUSE`.
 .. toctree::
     :maxdepth: 1
 
+    tutorials/notebook/Leonardo_DeStripe
     tutorials/notebook/Leonardo_FUSE_along_illumination
     tutorials/notebook/Leonardo_FUSE_along_detection
 
