@@ -58,3 +58,4 @@ urllib3==1.26.9
     # via requests
 nbsphinx==0.9.2
 pandoc
+sphinx-copybutton
