@@ -36,8 +36,6 @@ Coming soon
    installation
    tutorials
    api
-   release_notes
-   contributors
 
 .. |Docs| image:: https://img.shields.io/readthedocs/basicpy
     :target: https://basicpy.readthedocs.io/en/latest/

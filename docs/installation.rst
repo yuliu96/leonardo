@@ -1,16 +1,47 @@
 Installation
 ============
 
-We highly recommend using a `conda` 
+Leonardo requires Python<=3.9 and numpy<2.0. We highly recommend using :mod:`conda` 
 virtual environment to install and operate Leonardo.
 
-Install from PyPI
+PyPI
+-----
+
+Install Leonardo from PyPI using:
 
 .. code-block:: bash
-    
+
+    conda create -n leonardo pyton=3.9 numpy=1.26.4
+    conda activate leonardo
     pip install leonardo_toolset
 
+or full software including Napari plugins:
 
-.. Development Head: pip install git+https://github.com/peng-lab/leonardo_toolset.git
+.. code-block:: bash
 
-.. Full software including napari plugins: pip install leonardo_toolset[napari]
+    pip install leonardo_toolset[napari]
+
+Core components in :mod:`Leonardo` are installable separately:
+
+.. code-block:: bash
+
+    # Leonardo-DeStripe
+    pip install lsfm-destripe
+    
+    # Leonardo-Fuse
+    pip install lsfm-fuse
+
+    # Leonardo-DeStripe in Napari
+    pip install lsfm_destripe_napari
+
+    # Leonardo-Fuse in Napari
+    pip install lsfm_fusion_napari
+
+Development Version
+--------------------
+
+To work with the latest development version, install from GitHub using:
+
+.. code-block:: bash
+
+    pip install git+https://github.com/peng-lab/leonardo_toolset.git
