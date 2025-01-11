@@ -1,6 +1,9 @@
 Installation
 ============
 
+We highly recommend using a `conda` 
+virtual environment to install and operate this plugin.
+
 Install from PyPI
 
 .. code-block:: bash
