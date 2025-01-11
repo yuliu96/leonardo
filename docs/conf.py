@@ -32,7 +32,7 @@ extensions = [
     "sphinx.ext.autosummary",
     "sphinx.ext.intersphinx",
     "nbsphinx",
-    "sphinx_copybutton",
+    # "sphinx_copybutton",
 ]
 
 intersphinx_mapping = {
