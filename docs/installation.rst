@@ -21,21 +21,25 @@ or full software including Napari plugins:
 
     pip install leonardo_toolset[napari]
 
-Core components in :mod:`Leonardo` are installable separately:
 
-.. code-block:: bash
+.. toggle::
+   :show:
 
-    # Leonardo-DeStripe
-    pip install lsfm-destripe
-    
-    # Leonardo-Fuse
-    pip install lsfm-fuse
+    Core components in :mod:`Leonardo` are installable separately:
 
-    # Leonardo-DeStripe in Napari
-    pip install lsfm_destripe_napari
+    .. code-block:: bash
 
-    # Leonardo-Fuse in Napari
-    pip install lsfm_fusion_napari
+        # Leonardo-DeStripe
+        pip install lsfm-destripe
+        
+        # Leonardo-Fuse
+        pip install lsfm-fuse
+
+        # Leonardo-DeStripe in Napari
+        pip install lsfm_destripe_napari
+
+        # Leonardo-Fuse in Napari
+        pip install lsfm_fusion_napari
 
 Development Version
 --------------------
