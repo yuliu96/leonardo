@@ -33,6 +33,7 @@ extensions = [
     "sphinx.ext.intersphinx",
     "nbsphinx",
     "sphinx_copybutton",
+    "sphinxcontrib.video",
 ]
 
 intersphinx_mapping = {

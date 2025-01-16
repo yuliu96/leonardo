@@ -11,7 +11,7 @@ Install Leonardo from PyPI using:
 
 .. code-block:: bash
 
-    conda create -n leonardo pyton=3.9 numpy=1.26.4
+    conda create -n leonardo python=3.9 numpy=1.26.4
     conda activate leonardo
     pip install leonardo_toolset
 
