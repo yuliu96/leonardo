@@ -20,11 +20,6 @@ Advanced Tutorials
 --------------------
 This section contains video tutorials showcasing how to use our Napari interface to easily realize aforementioned functions.
 
-.. video:: tutorials/video/Installation.mp4
-    :width: 100%
-    :caption: Installation of Leonardo in Napari
-    :align: center
-
 .. video:: tutorials/video/destripe.mp4
     :width: 100%
     :caption: Leonardo-DeStripe in Napari
