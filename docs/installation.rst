@@ -21,6 +21,8 @@ or full software including Napari plugins:
 
     pip install leonardo_toolset[napari]
 
+Leonardo has now been tested on Linux and Windows and might has issue on macOS.
+
 
 .. toggle::
    :show:
