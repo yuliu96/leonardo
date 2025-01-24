@@ -19,14 +19,36 @@ eliminating optical distortions (ghosts) caused by light refraction.
     :alt: leonardo title figure
     :width: 900px
     :align: center
-    :target: https://github.com/peng-lab/leonardo_toolset
+    :target: https://doi.org/10.21203/rs.3.rs-5853941/v1
 
 
 |
 Manuscript
 ----------
 
-Coming soon
+coming soon
+
+.. If you include or rely on Leonardo when publishing research, please cite:
+
+.. .. code-block:: bibtex
+
+..     @article{Bergen2020,
+..         title = {Generalizing RNA velocity to transient cell states through dynamical modeling},
+..         volume = {38},
+..         ISSN = {1546-1696},
+..         url = {http://dx.doi.org/10.1038/s41587-020-0591-3},
+..         DOI = {10.1038/s41587-020-0591-3},
+..         number = {12},
+..         journal = {Nature Biotechnology},
+..         publisher = {Springer Science and Business Media LLC},
+..         author = {Bergen, Volker and Lange, Marius and Peidli, Stefan and Wolf, F. Alexander and Theis, Fabian J.},
+..         year = {2020},
+..         month = aug,
+..         pages = {1408-1414}
+..     }
+.. Tingying Peng, Yu Liu, Gesine Müller et al. 
+.. Leonardo: A Toolset to Remove Sample-Induced Aberrations in Light Sheet Microscopy Images, 
+.. 23 January 2025, PREPRINT (Version 1) available at Research Square [https://doi.org/10.21203/rs.3.rs-5853941/v1]
 
 .. toctree::
    :caption: General
