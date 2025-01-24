@@ -18,7 +18,8 @@ and how to build an optimal workflow to resolve sample-induced aberrations using
 
 Advanced Tutorials
 --------------------
-This section contains video tutorials showcasing how to use our Napari interface to easily realize aforementioned functions.
+This section contains video tutorials showcasing how to use our Napari interface to easily realize aforementioned functions. Example dataset is downloadable at 
+`zenodo <https://zenodo.org/records/14215090>`_.
 
 .. video:: tutorials/video/destripe.mp4
     :width: 100%
