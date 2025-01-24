@@ -1,7 +1,7 @@
 Installation
 ============
 
-Leonardo requires Python<=3.9 and numpy<2.0. We highly recommend using :mod:`conda` 
+Leonardo requires Python>=3.9. We highly recommend using :mod:`conda` 
 virtual environment to install and operate Leonardo.
 
 PyPI
@@ -11,7 +11,7 @@ Install Leonardo from PyPI using:
 
 .. code-block:: bash
 
-    conda create -n leonardo python=3.9 numpy=1.26.4
+    conda create -n leonardo python=3.9
     conda activate leonardo
     pip install leonardo_toolset
 
@@ -19,7 +19,10 @@ or full software including Napari plugins:
 
 .. code-block:: bash
 
+    # for Windows or Linux users
     pip install leonardo_toolset[napari]
+    # for macOS users
+    pip install leonardo_toolset`[napari]`
 
 Leonardo has now been tested on Linux and Windows and might has issue on macOS.
 
