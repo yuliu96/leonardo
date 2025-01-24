@@ -27,7 +27,8 @@ or full software including Napari plugins:
     # for macOS users
     pip install leonardo_toolset`[napari]`
 
-Leonardo has now been tested on Linux and Windows and might have issue on macOS.
+Leonardo has now been tested on Linux and Windows. 
+Leonardo may have issues on macOS caused by third-party dependencies, specifically resulting in a "metadata-generation-failed" error.
 
 GPU version
 ~~~~~~~~~~~
