@@ -12,9 +12,9 @@ and how to build an optimal workflow to resolve sample-induced aberrations using
     :maxdepth: 1
 
     tutorials/notebook/Leonardo_DeStripe
-    tutorials/notebook/Leonardo_FUSE_along_illumination
-    tutorials/notebook/Leonardo_FUSE_along_detection
-    tutorials/notebook/Leonardo_FUSE_DeStripe
+    tutorials/notebook/Leonardo_Fuse_(along_illumination)
+    tutorials/notebook/Leonardo_Fuse_(along_detection)
+    tutorials/notebook/Leonardo_DeStripe_Fuse
 
 Advanced Tutorials
 --------------------

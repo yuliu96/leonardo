@@ -7,7 +7,10 @@ virtual environment to install and operate Leonardo.
 PyPI
 -----
 
-#. 1. To use Leonardo with CPU, install Leonardo from PyPI using:
+CPU version
+~~~~~~~~~~~
+
+To use Leonardo with CPU, install Leonardo using:
 
 .. code-block:: bash
 
@@ -24,13 +27,16 @@ or full software including Napari plugins:
     # for macOS users
     pip install leonardo_toolset`[napari]`
 
-Leonardo has now been tested on Linux and Windows and might has issue on macOS.
+Leonardo has now been tested on Linux and Windows and might have issue on macOS.
 
-#. 2. To use Leonardo with GPU:
-Setup Pytorch according to your own system setting, following the official guideline: https://pytorch.org/get-started/locally/
-Instaall leonardo_toolset following the instructions in option 1.
+GPU version
+~~~~~~~~~~~
 
+To use Leonardo with GPU:
 
+- Setup Pytorch according to your own system setting, following the `official guideline <https://pytorch.org/get-started/locally/>`_.
+- Setup Jax according to your own system setting, following the `official guideline <https://jax.readthedocs.io/en/latest/installation.html>`_ (Optional).
+- Install Leonardo following the instructions under Section CPU version.
 
 .. toggle::
    :show:
